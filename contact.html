@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- cdn from bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+
+</head>
+
+<body>
+    <!-- header  -->
+
+    <section class="contact-header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/final.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="csseff">Contact Us </h1>
+    </section>
+
+
+
+
+    <!-- ontact US  -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.89797171624!2d77.04417344566377!3d28.527554408382205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1670621001622!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Gaddha Colony, Zakir Nagar</h5>
+                        <p>New Delhi, 110025</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8210111482</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>cman55245@gmail.com</h5>
+                        <p>Email us your querry</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="contact-col" id="con">
+
+
+                <form  onsubmit="sendemail(); reset(); return false;">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="party" placeholder="Enter Your Party Name" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer  -->
+
+    <section class="footer">
+
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="event.html">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="text" placeholder="Your email address">
+                <br>
+                <button type="submit"> SUBSCRIBE NOW</button>
+            </form>
+
+        </div>
+
+        <div class="col-3">
+            <h3>OFFICE</h3>
+            <p>Gaddha Colony, Zakir Nagar <br> New Delhi , 110025 <br>+91 8210111482 <br>10AM to 8PM</p>
+
+            
+        </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div>
+            <p>Copyright &copy;2022 <span class="sss">EventMafia.</span> design by <span class="ccc">Faraz Ashraf</span> </p>
+            <div class="social-icon">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer end  -->
+
+
+
+
+
+
+
+
+
+    <!-- -----------button click for small screen-------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>    
+</body>
+
+</html>

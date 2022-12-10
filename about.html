@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Us Page </title>
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- cdn from bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+
+
+</head>
+
+<body>
+    <!-- header  -->
+
+    <section class="sub-header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/final.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- about us content   -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h5 class="abo">About Event Mafia</h5>
+                <h1>Hey Viewers</h1>
+                <p class="oh">Evil Mafia is a Delhi based Startup founded in 2022 by a college student Faraz Ashraf.Evil
+                    Mafia core passion is to organuse premium parties and and events, making sure it meets our clients
+                    high quality expectation. Our motive is to bring revolution in the field of organizaton of parties
+                    and events by digiitalizing it and providing facilities with one click. <br> <br>
+                    Our goal is to bring you the clear vision of your decoration and the apry organised beforethe party
+                    . You will get pictures and photos to slect for your parties, events, wedding.
+                    <br><br> Evil Mafia makes their client effort less by providing the exact decoration and services
+                    beyound their expextation. Our client reviews have made us motivated and helped us to upgrade our
+                    vision for further era.
+                </p>
+                <a href="" class="red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/front.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- about us content end  -->
+
+
+
+
+
+
+
+
+
+    <!-- footer  -->
+
+    <section class="footer">
+
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="event.html">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <input type="text" placeholder="Your email address">
+                <br>
+                <button type="submit"> SUBSCRIBE NOW</button>
+            </form>
+
+        </div>
+
+        <div class="col-3">
+            <h3>OFFICE</h3>
+            <p>Gaddha Colony, Zakir Nagar <br> New Delhi , 110025 <br>+91 8210111482 <br>10AM to 8PM</p>
+
+
+        </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div>
+            <p>Copyright &copy;2022 <span class="sss">EventMafia.</span> design by <span class="ccc">Faraz Ashraf</span>
+            </p>
+            <div class="social-icon">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer end  -->
+
+
+
+
+
+
+
+
+
+    <!-- -----------button click for small screen-------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
